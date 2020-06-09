@@ -107,7 +107,5 @@ binding.pry
     puts "Cat's Game!"
   else
   end
-end
-  
   
 end 
