@@ -18,4 +18,8 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+ def move(location, character = "X")
+    @board[location.to_i - 1] = character
+  end
+
 end 
