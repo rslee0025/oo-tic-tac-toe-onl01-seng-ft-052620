@@ -97,7 +97,6 @@ def winner
 end
 
 def play
-binding.pry
   turn until over?
   if winner == "X"
     puts "Congratulations X!"
