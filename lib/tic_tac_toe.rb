@@ -56,4 +56,10 @@ def turn
   end
 end
 
+def won?
+  WIN_COMBINATIONS.detect do |position|
+      @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && @board[position[2]] != " "
+  end
+end
+
 end 
