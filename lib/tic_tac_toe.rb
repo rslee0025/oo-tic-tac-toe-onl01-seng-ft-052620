@@ -75,6 +75,14 @@ def over?
   won? || full? || draw?
 end
 
-
+def winner
+    if won? == nil || @board[won?.first] != "X" && @board[won?.first] != "O"
+      return nil
+    elsif @board[won?.first] == "X"
+      return "X"
+    else "O"
+    end
+  end
+end
 
 end 
