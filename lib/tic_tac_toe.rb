@@ -67,6 +67,8 @@ def full?
   !@board.include?(" ")
 end
 
-
+def draw?
+  full? && !won?
+end
 
 end 
