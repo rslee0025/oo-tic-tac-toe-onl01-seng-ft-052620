@@ -62,4 +62,11 @@ def won?
   end
 end
 
+def full?
+  @board.include?("X" || "O")
+  !@board.include?(" ")
+end
+
+
+
 end 
